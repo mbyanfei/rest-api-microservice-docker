@@ -35,7 +35,7 @@ bookFields = {
 # Resource: Individual Book Routes
 class Book(Resource):
     def __init__(self):
-        # Initialize The Flsak Request Parser and add arguments as in an expected request
+        # Initialize The Flask Request Parser and add arguments as in an expected request
         self.reqparse = reqparse.RequestParser()
         self.reqparse.add_argument("title", type=str, location="json")
         self.reqparse.add_argument("author", type=str, location="json")
