@@ -7,3 +7,6 @@ docker build -t flaskbookapi:1.0 .
 docker run -p 5000:5000 --name FlaskBookAPI flaskbookapi:1.0
 
 
+curl --header "Content-Type: application/json"  --request POST  --data '{"title":"yan title","author":"yan","length":200,"rating":5.0}'  http://localhost:5000/books
+
+
